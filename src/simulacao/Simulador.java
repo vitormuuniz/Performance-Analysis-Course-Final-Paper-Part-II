@@ -1,10 +1,12 @@
-package Simulacao;
+package simulacao;
 
 import static java.lang.Math.log;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Random;
 import java.util.Scanner;
+
+import Simulacao.Little;
 
 public class Simulador {
 
@@ -57,11 +59,11 @@ public class Simulador {
 
     public void simulacao() {
 
-        PriorityQueue<Pacote> heap_min = new PriorityQueue();  //arvore para tratamento dos eventos futuros de CBR      
+        PriorityQueue<Pacote> heap_min = new PriorityQueue<>();  //arvore para tratamento dos eventos futuros de CBR      
 
-        LinkedList<Pacote> fila_atendimento_web = new LinkedList(); //fila para os pacotes web
+        LinkedList<Pacote> fila_atendimento_web = new LinkedList<>(); //fila para os pacotes web
 
-        LinkedList<Pacote> fila_atendimento_cbr = new LinkedList(); //fila para os pactes cbr
+        LinkedList<Pacote> fila_atendimento_cbr = new LinkedList<>(); //fila para os pactes cbr
 
         boolean isWEB = true;//inicializada desnecessariamente
 
@@ -430,5 +432,6 @@ public class Simulador {
         System.out.println();
 
         System.out.println("Ocupacao TOTAL: " + ocupacao / tempo);
+        ler.close();
     }
 }

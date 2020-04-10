@@ -1,18 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Simulacao;
+package simulacao;
 
-import java.text.ChoiceFormat;
 import java.util.Random;
 
-/**
- *
- * @author glauc
- */
-public class AleatoriosIntervalo {
+public class GeraIntervalosAleatorios {
 
     public static void main(String[] args) {
         Random a = new Random();
@@ -28,7 +18,5 @@ public class AleatoriosIntervalo {
             soma += (double) (a.nextInt((20 - 10) + 1) + 10) / 1000;
         }
         System.out.println("Media:  " + soma / x);
-
     }
-
 }
